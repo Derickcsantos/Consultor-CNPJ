@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport"content="width=device-width,initial-scale=1.0">
+    <meta name="robots" content="index,follow">	
+    <meta name="description" content="Projeto consultor de cep, com objetivo de trazer informação ao usuario, 
+    com uma interface simples e interativa, este é um de meus projetos com finalidade de uso esporadico">
+    <meta name="keyword" content="Inovação, Tecnologia, CEP, Endereço, API, Consulta, Informação">
+    <meta name="author" content=" Dérick campos santos, Derick, Dking">
+    <meta name="language" content="pt-BR">
+    <meta name="theme-color" content="#ffffff">
+    <meta name="generator" content="Visual studio code">
+
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"> <!-- Evitar cache -->
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="0">
+    <meta http-equiv="refresh" content="30">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <meta property="og:title" content="Consultor de CEP">
+	<meta property="og:url" content="https://gugutalkshoww.vercel.app/">
+	
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <title>Consultor de CNPJ</title>
+</head>
+<body>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <h2>Consultor de CNPJ</h2>
+        <input type="text" name="Cep" id="inputCEP" placeholder="Digite o CNPJ"><i onclick="iniciar()" id="pesquisar" class="fa-solid fa-magnifying-glass"></i>
+    </div>
+    <a href="https://www.linkedin.com/in/derickcampossantos/"><button class="marketing">Sobre mim</button></a>
+
+    <div id="popup" class="notificacao">
+        <i onclick="fecharPopup()" id="closePopup" class="fa-solid fa-xmark"></i>
+        <h2>Dados do CNPJ</h2>
+        <div class="dados">
+            <p id="pUF"></p>
+            <p id="pLocal"></p>
+            <p id="pRua"></p>
+            <p id="pCEP"></p>
+        </div>
+
+    </div>
+    
+    <script src="script.js"></script>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+	<script>
+		new window.VLibras.Widget('https://vlibras.gov.br/app');
+	</script>
+</body>
+</html>
