@@ -120,7 +120,7 @@ body{
     background-color: #0687ff;
 }
 
-@media (min-width = 375px){
+@media (width <= 375px){
     .container,
     .notificacao{
        width: 80%;
