@@ -20,7 +20,6 @@ Para clonar o repositório, utilize o comando:
 git clone https://github.com/derickcsantos/ConsultorDeCNPJ.git
 ```
 ## Tecnologias Utilizadas
-**Node.js:** Ambiente de execução Javascript do lado do Servidor.
 
 **Javascript:** Linguagem de programação principal do projeto, utilizada para trabalhar a interação da página e a manipulação da API.
 
