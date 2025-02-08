@@ -38,7 +38,7 @@ body{
     justify-content: center;
     background-color: #fff;
     border: 1px solid #ccc;
-    z-index: 999;
+    z-index: 997;
 }
 
 .container input{
@@ -118,4 +118,14 @@ body{
 .marketing:hover{
     transform: scale(1.1);
     background-color: #0687ff;
+}
+
+@media (width <= 375px){
+    .container,
+    .notificacao{
+       width: 80%;
+    }
+    .marketing{
+        z-index: 999;
+    }
 }
