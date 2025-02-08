@@ -7,16 +7,18 @@ document.getElementById('pesquisar').addEventListener('click', async function(){
     const nome = data.nome_fantasia;
     const cep = data.cep;
     const razao = data.razao_social;
+    const telefone = data.ddd_telefone_1
 
     console.log(`UF: ${cnpjN}`);
     console.log(`Cidade: ${nome}`);
     console.log(`Logradouro: ${razao}`);
     console.log(`CEP: ${cep}`);
 
-    document.getElementById('pUF').innerHTML = `<strong>UF:</strong> ${cnpjN}`
-    document.getElementById('pLocal').innerHTML = `<strong>Cidade:</strong> ${nome}`
-    document.getElementById('pRua').innerHTML = `<strong>Rua:</strong> ${razao}`
+    document.getElementById('pNOME').innerHTML = `<strong>Nome:</strong> ${nome}`
+    document.getElementById('pCNPJ').innerHTML = `<strong>CNPJ:</strong> ${cnpjN}`
+    document.getElementById('pRZ').innerHTML = `<strong>Razão social:</strong> ${razao}`
     document.getElementById('pCEP').innerHTML = `<strong>CEP:</strong> ${cep}`
+    document.getElementById('pTEL').innerHTML = `<strong>Telefone:</strong> ${telefone}`
     
 })
 

@@ -42,12 +42,13 @@ body{
 }
 
 .container input{
-    height: 40px;
+    height: auto;
     width: 70%;
     border-radius: 20px;
     border: 1px solid #ccc;
     position: absolute;
     top: 60%;
+    padding: 20px;
     text-align:center;
 }
 
@@ -93,17 +94,28 @@ body{
 }
 
 .dados p{
-    margin: 5px;
+    font-size: 18px;
+    margin: 15px;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
 }
 
 .marketing{
-    position: absolute;
-    top: 70%;
-    left: 35%;
     border-radius: 10px;
-    width: 30%;
-    height: 40px;
-    background-color: #0d8676;
+    width: auto;
+    height: auto;
+    font-size: 50px;
+    padding: 10px;
+    background-color: #0672ff;
     color: #fff;
     border: 1px solid #fff;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.5s ease;
+}
+
+.marketing:hover{
+    transform: scale(1.1);
+    background-color: #0687ff;
 }
